@@ -134,12 +134,6 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LccsBiz\LccsBiz.csproj">
-      <Project>{4e26c8c9-a188-472f-ba50-bb3940cc84a1}</Project>
-      <Name>LccsBiz</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -152,9 +152,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LccsBiz\LccsBiz.csproj">
-      <Project>{4e26c8c9-a188-472f-ba50-bb3940cc84a1}</Project>
-      <Name>LccsBiz</Name>
+    <ProjectReference Include="..\LccsBiz.Std\LccsBiz.Std.csproj">
+      <Project>{a0fd69cd-322a-4353-b6b9-583bdb5ab0b6}</Project>
+      <Name>LccsBiz.Std</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

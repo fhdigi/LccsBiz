@@ -21,7 +21,7 @@ namespace LccsBiz.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new LccsBiz.App());
+            LoadApplication(new LccsBiz.Std.App());
         }
     }
 }
