@@ -1,12 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControls="clr-namespace:LccsBiz.Std.CustomControls;assembly=LccsBiz.Std"
              x:Class="LccsBiz.Std.Pages.ReceivablesPage">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to the Receivables Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListView Grid.Row="0" Grid.Column="1"
+                      ItemsSource="{Binding MainItemList}">
+                
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <customControls:ViewItemCustomControl ImageLocation="{Binding ImageSource}"
+                                                                  Title="{Binding HeadingTitle}"
+                                                                  SubTitle="{Binding SubTitle}" />
+                        </ViewCell>
+
+                    </DataTemplate>
+                
+                </ListView.ItemTemplate>
+            
+            </ListView>
+            
+        </Grid>
+        
     </ContentPage.Content>
+    
 </ContentPage>
